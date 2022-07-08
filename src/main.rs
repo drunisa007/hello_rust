@@ -4,11 +4,18 @@
 // #![allow(unused_variables)]
 
 
-use  hello::print_difference;
+use  hello::{print_array,print_difference,check_13};
 
 fn main(){
 
    print_difference(12.6, 2.0);
+
+   let tuple = ([23,33],[2.1,2.0],(13,22,34));
+
+   print_array([tuple.2.0 as f64,tuple.2.1 as f64]);
+
+
+   check_13(tuple.2.0);
    
 
 
