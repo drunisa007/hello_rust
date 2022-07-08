@@ -3,12 +3,13 @@
 
 // #![allow(unused_variables)]
 
-use  hello::something;
+
+use  hello::print_difference;
 
 fn main(){
 
-
-  something();
+   print_difference(12.6, 2.0);
+   
 
 
    //excecise2
