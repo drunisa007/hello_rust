@@ -7,12 +7,37 @@
 //use  hello::{print_array,print_difference,check_13};
 
 
-use hello::{print_loop};
+//use hello::{print_loop};
+
+
+use std::env::{args};
+
+use hello::{sum,double,other};
+
 
 fn main(){
+   
 
 
-   print_loop();
+   let args:Vec<String> = args().skip(1).collect();
+
+   //println!("{:?}",args);
+
+
+   for arg in args{
+      if arg=="sum"{
+       sum();
+      }
+      else if arg=="double"{
+       double();
+      }
+      else{
+        other();
+      }
+   }
+
+
+   //print_loop();
    // let list_array = [(32,342),(23,2)];
 
    // println!("{}",print_loop(list_array));

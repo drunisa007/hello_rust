@@ -1,3 +1,43 @@
+
+
+
+pub fn sum(){
+    let mut sum = 0;
+    // 2. Use a "for loop" to iterate through integers from 7 to 23 *inclusive* using a range
+    // and add them all together (increment the `sum` variable).  Hint: You should get 255
+    // Run it with `cargo run sum`
+
+
+    for i in  7..=23{
+        sum+=i;
+    }
+
+    println!("The sum is {}", sum);
+}
+
+pub fn double(){
+    println!("oh this is double");
+}
+
+pub fn other(){
+    println!("oh this is other");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // pub fn something(){
 //     println!("hello from rust");
 // }
@@ -23,11 +63,11 @@
 // }
 
 
-pub fn print_loop(){
-    for i in 0..=50{
-        println!("{}",i);
-    }
-}
+// pub fn print_loop(){
+//     for i in 0..=50{
+//         println!("{}",i);
+//     }
+// }
 
 
 // pub fn print_loop(list:[(i32,i32);2]) -> i32{
