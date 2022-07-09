@@ -1,10 +1,10 @@
 // const TOTAL_MISSLE:i32 = 8;
 // const TOTAL_READY:i32 = 2;
 
-// #![allow(unused_variables)]
+// #![al&&low(unused_variables)]
 
 
-//use  hello::{print_array,print_difference,check_13};
+//use  hello::{print_array,pri&nt_difference,check_13};
 
 
 //use hello::{print_loop};
@@ -14,10 +14,93 @@
 //use hello::{sum,double,other};
 
 
+
 fn main(){
-   
 
 
+
+   //exercise 5
+
+   // let one = 1;
+   // let two = 2;
+
+
+
+   // println!("1 + 2 = {}, even via references", add(&one, &two));
+
+   // println!("{} {}",one,two);
+
+
+   // fn add(x1: &i32,x2: &i32)-> i32{
+   //   //(*x1)+(*x2)
+   //   x1+x2
+   // }
+
+
+//   let mut arg = std::env::args().nth(1).unwrap_or_else(||{
+//    println!("Please supply an argument to this program.");
+//    std::process::exit(-1);
+//   });
+
+
+//   println!("{:?}",arg);
+
+//   inspect(&arg);
+
+// //    let mut arg: String = std::env::args().nth(1).unwrap_or_else(|| {
+// //       println!("Please supply an argument to this program.");
+// //       std::process::exit(-1);
+// //   });
+
+
+//   change(&mut arg);
+
+//   println!("{}",arg);
+
+
+//   if eat(&arg){
+//    println!("yes may be banana");
+//   }
+//   else {
+//    println!("no bana");
+//   }
+
+
+
+//   fn eat(s:&String)-> bool{
+//     s.starts_with("b")&&s.contains("a")
+//   }
+
+
+// fn change(s:&mut String){
+//    if !s.ends_with("s"){
+//       s.push_str("s");
+//    }
+// }
+
+
+// fn inspect(s:&String){
+//   if s.ends_with("s"){
+//    println!("it is pural")
+//   }
+//   else{
+//    println!("it is singular")
+//   }
+// }
+
+
+    
+
+   // let mut  s1 = String::from("Hello World");
+
+   // do_staff(&mut s1);
+
+   // println!("{}",s1);
+
+   // fn do_staff(s:&mut String){
+   //    s.insert_str(0, "hello");
+   //   println!("{}",s);
+   // }
 
    //excecise 4
    // let args:Vec<String>  = std::env::args().skip(1).collect();
