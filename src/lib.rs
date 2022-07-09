@@ -1,40 +1,41 @@
 
 
 
-pub fn sum(){
-    let mut sum = 0;
-    for i in  7..=23{
-        sum+=i;
-    }
+//excercise 4 
+// pub fn sum(){
+//     let mut sum = 0;
+//     for i in  7..=23{
+//         sum+=i;
+//     }
 
-    println!("The sum is {}", sum);
-}
+//     println!("The sum is {}", sum);
+// }
 
-pub fn double(){
-    let mut count = 0;
-    let mut x = 1;
+// pub fn double(){
+//     let mut count = 0;
+//     let mut x = 1;
 
-    while x<500{
-        count+=1;
-        x=x*2;
-    }
+//     while x<500{
+//         count+=1;
+//         x=x*2;
+//     }
 
-    println!("You can double x {} times until x is larger than 500", count);
-}
+//     println!("You can double x {} times until x is larger than 500", count);
+// }
 
-pub fn other(args:String){
+// pub fn other(args:String){
 
 
-    let mut count = 0; 
-    loop{
-      println!("{}",args);
-      count+=1;
-      if count>7 {
-        break;
-      }
-    }
+//     let mut count = 0; 
+//     loop{
+//       println!("{}",args);
+//       count+=1;
+//       if count>7 {
+//         break;
+//       }
+//     }
 
-}
+// }
 
 
 

@@ -10,31 +10,32 @@
 //use hello::{print_loop};
 
 
-use std::env::{args};
 
-use hello::{sum,double,other};
+//use hello::{sum,double,other};
 
 
 fn main(){
    
 
 
-   let args:Vec<String> = args().skip(1).collect();
 
-   //println!("{:?}",args);
+   //excecise 4
+   // let args:Vec<String>  = std::env::args().skip(1).collect();
+
+   // //println!("{:?}",args);
 
 
-   for arg in args{
-      if arg=="sum"{
-       sum();
-      }
-      else if arg=="double"{
-       double();
-      }
-      else{
-        other(arg.clone());
-      }
-   }
+   // for arg in args{
+   //    if arg=="sum"{
+   //     sum();
+   //    }
+   //    else if arg=="double"{
+   //     double();
+   //    }
+   //    else{
+   //      other(arg.clone());
+   //    }
+   // }
 
 
    //print_loop();
