@@ -32,7 +32,7 @@ fn main(){
        double();
       }
       else{
-        other();
+        other(arg.clone());
       }
    }
 

@@ -3,11 +3,6 @@
 
 pub fn sum(){
     let mut sum = 0;
-    // 2. Use a "for loop" to iterate through integers from 7 to 23 *inclusive* using a range
-    // and add them all together (increment the `sum` variable).  Hint: You should get 255
-    // Run it with `cargo run sum`
-
-
     for i in  7..=23{
         sum+=i;
     }
@@ -16,11 +11,29 @@ pub fn sum(){
 }
 
 pub fn double(){
-    println!("oh this is double");
+    let mut count = 0;
+    let mut x = 1;
+
+    while x<500{
+        count+=1;
+        x=x*2;
+    }
+
+    println!("You can double x {} times until x is larger than 500", count);
 }
 
-pub fn other(){
-    println!("oh this is other");
+pub fn other(args:String){
+
+
+    let mut count = 0; 
+    loop{
+      println!("{}",args);
+      count+=1;
+      if count>7 {
+        break;
+      }
+    }
+
 }
 
 
