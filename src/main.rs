@@ -4,18 +4,28 @@
 // #![allow(unused_variables)]
 
 
-use  hello::{print_array,print_difference,check_13};
+//use  hello::{print_array,print_difference,check_13};
+
+
+use hello::{print_loop};
 
 fn main(){
 
-   print_difference(12.6, 2.0);
 
-   let tuple = ([23,33],[2.1,2.0],(13,22,34));
+   print_loop();
+   // let list_array = [(32,342),(23,2)];
 
-   print_array([tuple.2.0 as f64,tuple.2.1 as f64]);
+   // println!("{}",print_loop(list_array));
+
+   //excercise
+   // print_difference(12.6, 2.0);
+
+   // let tuple = ([23,33],[2.1,2.0],(13,22,34));
+
+   // print_array([tuple.2.0 as f64,tuple.2.1 as f64]);
 
 
-   check_13(tuple.2.0);
+   // println!("{} data ", check_13(tuple.2.0));
    
 
 
