@@ -13,9 +13,19 @@
 
 //use hello::{sum,double,other};
 
+#![allow(dead_code,unused_variables)]
+
 
 
 fn main(){
+
+
+   let mut vet : Vec<i32> = Vec::new();
+
+   vet.push(1);
+
+   println!("{:?}",vet);
+
 
 
 
