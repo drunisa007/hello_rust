@@ -17,18 +17,38 @@
 
 
 
+
 fn main(){
+   
+   
+   struct  Bite{
+      name: String,
+      is_white:bool
+   }
 
+   impl  Bite {
+       fn new()-> Self{
+         Self{
+            name: "Aung Thu".to_string(),
+            is_white: false
+         }
+       }
+   }
 
-   let mut vet : Vec<i32> = Vec::new();
+   trait Run {
+       fn running(&self) -> &str;
+   }
 
-   vet.push(1);
+   impl Run for Bite {
+    fn running(&self) -> &str {
+        &self.name
+    }
+}
 
-   println!("{:?}",vet);
-
-
-
-
+   let vite = Bite::new();
+   println!("{}",vite.running());
+    
+  
    //exercise 5
 
    // let one = 1;
