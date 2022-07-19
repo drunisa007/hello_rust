@@ -20,39 +20,41 @@
 
 fn main(){
 
+   trait  Bite {
+       fn bite(self:&mut Self);
+   }
 
-   struct Bite{
+   #[derive(Debug)]
+   struct Grapes {
       count:i32
    }
 
-
-   impl Bite {
-       fn new()-> Self{
-           Self{
-            count:54
-           }
-       }
-   }
-
-   trait Fruit {
-       fn show_count(self:&mut Self);
-   }
-
-   impl Fruit for Bite {
-    fn show_count(self:&mut Self) {
-       println!("fruit count is {}",self.count);
+   impl Bite for Grapes{
+    fn bite(self:&mut Self) {
+       self.count = self.count-1;
     }
 }
-   
-  let mut mrbite = Bite::new();
 
-  mrbite.show_count();
+  let mut  grap = Grapes{
+   count:32
+  };
+
+  grap.bite();
+
+  println!("{:?}",grap);
 
 
-   
+  generic_bite(&mut grap);
 
- 
+  println!("{:?}",grap);
+
+
   
+
+
+  fn generic_bite<T:Bite>(food: &mut T){
+   food.bite();
+  }
     
   
    //exercise 5
