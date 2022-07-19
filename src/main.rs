@@ -19,34 +19,40 @@
 
 
 fn main(){
-   
-   
-   struct  Bite{
-      name: String,
-      is_white:bool
+
+
+   struct Bite{
+      count:i32
    }
 
-   impl  Bite {
+
+   impl Bite {
        fn new()-> Self{
-         Self{
-            name: "Aung Thu".to_string(),
-            is_white: false
-         }
+           Self{
+            count:54
+           }
        }
    }
 
-   trait Run {
-       fn running(&self) -> &str;
+   trait Fruit {
+       fn show_count(self:&mut Self);
    }
 
-   impl Run for Bite {
-    fn running(&self) -> &str {
-        &self.name
+   impl Fruit for Bite {
+    fn show_count(self:&mut Self) {
+       println!("fruit count is {}",self.count);
     }
 }
+   
+  let mut mrbite = Bite::new();
 
-   let vite = Bite::new();
-   println!("{}",vite.running());
+  mrbite.show_count();
+
+
+   
+
+ 
+  
     
   
    //exercise 5
