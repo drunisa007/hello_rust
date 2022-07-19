@@ -27,6 +27,11 @@ impl  Rectangle {
     fn get_area(&self)-> u32{
         self.width*self.height
     }
+
+
+    fn compare(&self,rect:&Rectangle) -> bool{
+        self.width>rect.width&&self.height>rect.height
+    }
 }
 
 
@@ -36,11 +41,17 @@ fn main(){
    // third : use struct to decrease the area
 
    let rec1 = Rectangle{
+      width:30,
+      height:5600
+   };
+
+   let rec2 = Rectangle{
       width:20,
       height:50
    };
 
-   println!("the rectangle area is {:#?}",rec1.get_area());
+
+   println!("the rectangle area is {:#?}",rec1.compare(&rec2));
 
 
 
