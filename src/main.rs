@@ -16,45 +16,73 @@
 #![allow(dead_code,unused_variables)]
 
 
-
-
 fn main(){
 
-   trait  Bite {
-       fn bite(self:&mut Self);
-   }
-
-   #[derive(Debug)]
-   struct Grapes {
-      count:i32
-   }
-
-   impl Bite for Grapes{
-    fn bite(self:&mut Self) {
-       self.count = self.count-1;
-    }
-}
-
-  let mut  grap = Grapes{
-   count:32
-  };
-
-  grap.bite();
-
-  println!("{:?}",grap);
 
 
-  generic_bite(&mut grap);
+   // first : create simple rectangle
+   // second: use method to get area
+   // third : use struct to decrease the area
 
-  println!("{:?}",grap);
+
+
+   // let mut my_hash: HashMap<u8,bool> = HashMap::new();
+
+   // my_hash.insert(0, false);
+   // my_hash.insert(5, true);
+
+   // let result = my_hash.remove(&6).unwrap();
+
+
+
+
+   // println!("{:?}",result);
+
+//  let mut vect:Vec<i32> = vec![2,2,2];
+
+//  vect.push(4);
+
+//  println!("{:?}",vect);
+
+
+
+
+// excercise 6 
+//    trait  Bite {
+//        fn bite(self:&mut Self);
+//    }
+
+//    #[derive(Debug)]
+//    struct Grapes {
+//       count:i32
+//    }
+
+//    impl Bite for Grapes{
+//     fn bite(self:&mut Self) {
+//        self.count = self.count-1;
+//     }
+// }
+
+//   let mut  grap = Grapes{
+//    count:32
+//   };
+
+//   grap.bite();
+
+//   println!("{:?}",grap);
+
+
+//   generic_bite(&mut grap);
+
+//   println!("{:?}",grap);
 
 
   
 
 
-  fn generic_bite<T:Bite>(food: &mut T){
-   food.bite();
-  }
+//   fn generic_bite<T:Bite>(food: &mut T){
+//    food.bite();
+//   }
     
   
    //exercise 5
