@@ -24,7 +24,9 @@ struct Rectangle{
 }
 
 impl  Rectangle {
-    
+    fn get_area(&self)-> u32{
+        self.width*self.height
+    }
 }
 
 
@@ -33,17 +35,12 @@ fn main(){
    // second: use method to get area
    // third : use struct to decrease the area
 
-
-   fn get_area(width:u32,height:u32) -> u32{
-      width*height
-   }
-
    let rec1 = Rectangle{
       width:20,
       height:50
    };
 
-   println!("the rectangle area is {:#?}",get_area(rec1.width, rec1.height));
+   println!("the rectangle area is {:#?}",rec1.get_area());
 
 
 
