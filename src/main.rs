@@ -16,13 +16,37 @@
 #![allow(dead_code,unused_variables)]
 
 
+
+
+struct Rectangle{
+   width:u32,
+   height:u32
+}
+
+impl  Rectangle {
+    
+}
+
+
 fn main(){
-
-
-
    // first : create simple rectangle
    // second: use method to get area
    // third : use struct to decrease the area
+
+
+   fn get_area(width:u32,height:u32) -> u32{
+      width*height
+   }
+
+   let rec1 = Rectangle{
+      width:20,
+      height:50
+   };
+
+   println!("the rectangle area is {:#?}",get_area(rec1.width, rec1.height));
+
+
+
 
 
 
